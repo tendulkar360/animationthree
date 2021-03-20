@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(28,21,50, .85);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    background-color: red;
+    width: 20%;
+    transform: translateX(550px);
+    padding: 4px 2px 4px 2px;
+    border-radius: 9px;
+    box-shadow: 1px 1px 10px 1px rgb(100, 255, 177);
+    cursor: pointer;
+}
+
+h1:hover {
+    box-shadow: none;
+}
+
+.slider {
+    background: url(first.jpg);
+    height: 300px;
+    width: 40%;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 1px 10px 5px white;
+    animation: slider 20s ease infinite;
+}
+
+.slider:hover {
+    /* animation: slider 20s ease infinite; */
+    /* box-shadow: 2px 1px 10px 5px white; */
+    box-shadow: none;
+    height: 320px;
+    width: 42%;
+}
+
+@keyframes slider {
+    10%{background: url(first.jpg); background-size: 100% 100%;}
+    20%{background: url(second.jpg); background-size: 100% 100%;}
+    30%{background: url(third.jpg); background-size: 100% 100%;}
+    40%{background: url(forth.jpg); background-size: 100% 100%;}
+    50%{background: url(fifth.jpg); background-size: 100% 100%;}
+    60%{background: url(sixth.jpg); background-size: 100% 100%;}
+    70%{background: url(seventh.jpg); background-size: 100% 100%;}
+    80%{background: url(eight.jpg); background-size: 100% 100%;}
+    90%{background: url(ninth.jpg); background-size: 100% 100%;}
+    1000%{background: url(tenth.jpg); background-size: 100% 100%;}
+}
