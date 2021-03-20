@@ -43,6 +43,7 @@ h1:hover {
     box-shadow: none;
     height: 320px;
     width: 42%;
+    cursor: pointer;
 }
 
 @keyframes slider {
